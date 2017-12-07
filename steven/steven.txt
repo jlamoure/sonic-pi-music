@@ -1,0 +1,50 @@
+use_synth :fm
+use_bpm 100
+in_thread do
+  loop do
+    with_fx :tremolo, phase:0.25 do
+      #
+      play 94, release:0.5
+      sleep 0.5
+      play 103, release:0.75
+      sleep 0.5
+      play 101, release:0.5
+      sleep 0.25
+      play 98, release:0.5
+      sleep 0.25
+      play 99, release:0.5
+      sleep 2.75
+      #
+      play 94, release:0.5
+      sleep 0.5
+      play 103, release:0.75
+      sleep 0.5
+      play 101, release:0.5
+      sleep 0.25
+      play 98, release:0.5
+      sleep 0.25
+      play 98, release:0.5
+      sleep 2.75
+      #
+      play 94, release:0.5
+      sleep 0.5
+      play 103, release:0.75
+      sleep 0.5
+      play 101, release:0.5
+      sleep 0.25
+      play 98, release:0.5
+      sleep 0.25
+      play 99, release:0.5
+      sleep 2.75
+      #
+      play 94, release:0.5
+      sleep 0.5
+      play 103, release:0.75
+      sleep 0.5
+      play 101, release:0.5
+      sleep 0.25
+      play 98, release:0.5
+      sleep 4.75
+    end
+  end
+end
